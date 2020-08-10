@@ -37,7 +37,7 @@ document.addEventListener('turbolinks:load', function () {
       const newElement = document.createElement("div"); // addEventListnerのためにElementオブジェクトを作成
       newElement.innerHTML = buildSelectForm(categories); // Elementオブジェクトに新しいカテゴリのフォームを挿入
       const newSelectFormElement = newElement.childNodes[0]; // newElementの最初の子要素が新しいカテゴリのフォーム
-      newSelectFormElement.addEventListener("change", categoryChanged); // 新しいカテゴリのフォームにイベントを追加
+      newSelectFormElement.addEventListener("change", categoryChanged); // 新しいカテゴリのフォームにchangeイベントを追加
       changedForm.insertAdjacentElement("afterend", newSelectFormElement); // 新しいカテゴリのフォームをビューに表示する
     }
 

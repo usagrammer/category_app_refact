@@ -1,0 +1,5 @@
+<%= form_with url: root_path do |form| %>
+  <div id="category-forms">
+    <%= form.collection_select :category_id, Category.roots, :id, :name, {include_blank: "-----"}, class: "category_select_form" %>
+  </div>
+<%end%>

@@ -16,7 +16,7 @@ document.addEventListener('turbolinks:load', function () {
     }
   }
 
-  const categoryChanged = (e) => { // カテゴリが変更された時のイベント
+  const categoryChanged = (e) => { // カテゴリが変更された時、ajax通信を行い次のフォームを組み立てて追加する
     const selectedCategoryId = e.target.value; // 選択されたカテゴリのid
     const changedForm = e.target; // 選択されたカテゴリのフォーム
 

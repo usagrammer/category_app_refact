@@ -53,7 +53,7 @@ document.addEventListener('turbolinks:load', function () {
       categoryFormsWrapper.insertAdjacentElement("beforeend", newSelectFormElement); // 新しいカテゴリのフォームをビューに表示する
     }
 
-  }
+  } // categoryChanged()ここまで
 
   const buildSelectForm = (categories) => { // 新しいカテゴリのフォームを組み立てる
     let options = "";
